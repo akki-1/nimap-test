@@ -1,0 +1,35 @@
+.header{
+    background-color: white;
+}
+.but{
+    font-size: small;
+    position: relative;
+    margin-left: 5px;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 4px;
+    border-radius: 20px;
+    box-shadow: -2px 2px 7px rgb(238, 38, 38), -3px -2px 20px rgb(171 168 168 / 50%), 
+    inset 11px 8px 4px rgb(255 255 255 / 10%), -2px 2px 8px rgb(0 0 0 / 15%);
+   transition: all 0.3s ease;
+}
+.but:hover::before{
+    border-radius: 20px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow:  
+    inset -3px -8px 4px rgb(255 255 255 / 10%), 3px 2px 8px rgba(7, 11, 238, 0.911);
+
+
+}
+.but:hover{
+    color: blue;
+    margin-top: 5px;
+}

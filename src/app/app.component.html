@@ -1,0 +1,7 @@
+<ngx-ui-loader fgsColor="red" text="loading"
+></ngx-ui-loader>
+<app-navbar></app-navbar>
+<div ngxUiLoaderBlurred blur="8" class="container-fluid main">
+    <router-outlet (event)="getUser($event)"></router-outlet>
+</div>
+

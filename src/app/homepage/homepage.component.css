@@ -1,0 +1,64 @@
+.main{
+  padding: 0;
+}
+.slide{
+  padding: 0;
+}
+.object{
+ 
+  padding: 70px 35px 10px;
+  height: 100vh;
+}
+.search{
+  margin-left: 100px;
+  margin-bottom: 60px;
+}
+.textSearch{
+  padding-bottom: 30px;
+  text-align: left;
+  font-size: xx-large;
+}
+.search input{
+  width: 25rem;
+}
+.rowsetting2{
+  margin-top: 50px;
+}
+fa-icon{
+  font-size: 7rem;
+}
+.icon{
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: -2px 2px 7px rgb(120 114 114), -3px -2px 20px rgb(171 168 168 / 50%), 
+  inset 11px 8px 4px rgb(255 255 255 / 10%), -2px 2px 8px rgb(0 0 0 / 15%);
+ transition: all 0.3s ease;
+}
+.slide img{
+    height: 100vh;
+    filter: blur(8px);
+  -webkit-filter: blur(6px);
+}
+#userImage{
+  height: 200px;
+}
+.age{
+  height: 100px;
+}
+.items{
+  margin: 1px;
+}
+.item{
+  display: inline;
+}
+.img{
+  height: 16px;
+  cursor: pointer;
+}
+.imgDismiss{
+  height: 30px;
+  cursor: pointer;
+}
+.interest{
+  padding: 25px;
+}

@@ -1,0 +1,186 @@
+
+<div class="container-fluid main">
+    <div class="row rowsetting">
+        
+        <div class="col-lg-12 col-md-12 col-sm-10 col-12 d-block m-auto slide">
+
+          <ngb-carousel>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper ">
+                <img class="img-fluid card-img-top" src="../../assets/newimage4.jpg" alt="Random first slide">
+                
+              </div>
+              <div class="carousel-caption caption">
+                <div class="textSearch">
+                  <span>I am Looking for....</span>
+                </div>
+                
+                <form class="form-inline  search">
+                 
+                  <input id="searchJob" class="form-control mr-4" type="search" placeholder="Search for job" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form><br>
+                <button class="btn btn-outline-primary mb-2 me-2" (click)="openLg(content)">Register Now</button>
+                <!-- <p>We as a Karate Students needs to respect Rules First</p> -->
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <img class="img-fluid card-img-top" src="../../assets/newimage.jpg" alt="Random second slide">
+              <div class="carousel-caption caption">
+                <h3>We are perfect for imperfects</h3>
+                <!-- <p>We will give you a confidence that helps you to practise and fight alone</p> -->
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <img class="img-fluid card-img-top" src="../../assets/newimage2.jpg" alt="Random third slide">
+              <div class="carousel-caption caption">
+                <h3>Makes You Perfect</h3>
+                <!-- <div class="health">
+                  <p>The Karate Helps to boost up your health,stretch the body to its max strength.</p>
+                </div> -->
+                
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <img class="img-fluid card-img-top" src="../../assets/newimage3.jpg" alt="Random fourth slide">
+              <div class="carousel-caption caption">
+                <h2>We Are Upcoming Tech Giants </h2>
+                <!-- <p>This carousel uses customized default values.</p> -->
+              </div>
+            </ng-template>
+          </ngb-carousel>
+        </div>
+    
+      </div>
+      <div class="container object">
+        <h2 class="text-center">Say Hello to our Objectives</h2>
+        <div class="row rowsetting2">
+          <div class="col-lg-3 col-md-3 col-sm-10 col-10 d-block m-auto icon ">
+            <div class="d-block m-auto imagesetting ">
+              <fa-icon class="text-warning"  [icon]="faCoffee"></fa-icon>
+            </div>
+            <h3>Best Training</h3>
+            <p>We Provides Best in class training available with proper guidence and security so that parents feel free when their child getting trained here.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-10 col-10 d-block m-auto icon">
+            <div class="d-block m-auto imagesetting ">
+              <fa-icon class="text-danger"  [icon]="trophy"></fa-icon>
+            </div>
+            <h3>Achievements</h3>
+            <p>We beleive in quote "Practise Makes Man Perfect" So we take students to participate in tournaments and with practise ,they also learn that how to perform on a stage,how react with opponent.</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-10 col-10 d-block m-auto icon">
+            <div class="d-block m-auto imagesetting ">
+              <fa-icon class="text-warning"  [icon]="faCoffee"></fa-icon>
+            </div>
+            <h3>Developing Yourself</h3>
+            <p>We works on both physical and mental health of the Students so that they can learn,practise,analyze and improve themselves.</p>
+          </div>
+        </div>
+      </div>
+      
+      <ng-template #content let-modal>
+        <div class="modal-header bg-primary text-center">
+          <h4 class="modal-title">Registration Form</h4>
+         <span><img class="imgDismiss" (click)="modal.dismiss('Cross click')" src="../../assets/red-dis.png" alt=""></span>
+
+        </div>
+        <div class="modal-body">
+          <form #form="ngForm" (ngSubmit)="saveUser()" class="form">
+            <div class="row">
+              <div class="form-group col-md-4">
+                <label for="userImage">Upload Image</label>
+               <img id="userImage" [src]="imageURL" alt="userImage">
+               <input type="file" (change)="selectFile($event)">
+              </div>
+              <div class="form-group col-md-4">
+                <label class="mt-4" for="firstName">First Name</label>
+                <input #firstName="ngModel" [(ngModel)]="user.firstName" name="firstName" type="text" [class.is-invalid]="firstName.invalid && firstName.touched" class="form-control" id="firstName" placeholder="John" required>
+                <small [class.d-none]="firstName.valid || firstName.untouched" class="text-danger">Enter First Name</small>
+                <div class="age">
+                  <label class="mt-3" for="age">Select Age</label>
+                  <ngx-slider id="age" [(value)]="value" [options]="options"></ngx-slider>
+                  <input class="form-control" type="text" [value]="value" required>
+                </div>
+                
+                
+              </div>
+              <div class="form-group col-md-4">
+                <label class="mt-4" for="lastName">Last Name</label>
+                <input #lastName="ngModel" [(ngModel)]="user.lastName" [class.is-invalid]="lastName.invalid && lastName.touched" name="lastName" type="text" class="form-control" id="lastName" placeholder="Wick" required>
+                <small [class.d-none]="lastName.valid || lastName.untouched" class="text-danger">Enter Last Name</small><br>
+                <label class="mt-5" for="email">Email</label>
+                <input #email="ngModel" [(ngModel)]="user.email" name="email" [class.is-invalid]="email.invalid && email.touched" type="email" class="form-control" id="email" placeholder="johnwick@gmail.com" required>
+                <small [class.d-none]="email.valid || email.untouched" class="text-danger">Enter Email</small>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="username">Username</label>
+                <input #username="ngModel" [(ngModel)]="user.username" name="username" [class.is-invalid]="username.invalid && username.touched" type="text" class="form-control" id="username" placeholder="johnwick123" required>
+                <small [class.d-none]="username.valid || username.untouched" class="text-danger">Enter Username</small>
+              </div>
+              
+              <div class="form-group col-md-6">
+                <label for="password">Password</label>
+                <input #password="ngModel" [(ngModel)]="user.password" type="password" [class.is-invalid]="password.invalid && password.touched" class="form-control" id="password" name="password" required>
+                <small [class.d-none]="password.valid || password.untouched" class="text-danger">Enter Password</small>
+              </div>
+
+
+              <div class="form-group col-md-4">
+                <label for="address">Select Address</label>
+                <select #addressType="ngModel" name="addressType" [(ngModel)]="currentAddress" (change)="address()" [class.is-invalid]="addressType.invalid && addressType.touched" class="form-control" id="addressType" required>
+                  <option>Select</option>
+                  <option>Home</option>
+                  <option>Company</option>
+                </select>
+              </div>
+              <div *ngIf="home" class="form-group col-md-4">
+                <label for="address1">Address 1</label>
+                <input #address1="ngModel" [(ngModel)]="user.address1" type="text" [class.is-invalid]="address1.invalid && address1.touched" class="form-control" id="address1" name="address1" required>
+                <small [class.d-none]="address1.valid || address1.untouched" class="text-danger">Enter Address 1</small>
+              </div>
+              <div *ngIf="home" class="form-group col-md-4">
+                <label for="address2">Address 2</label>
+                <input #address2="ngModel" [(ngModel)]="user.address2" type="text" [class.is-invalid]="address2.invalid && address2.touched" class="form-control" id="address2" name="address2" required>
+                <small [class.d-none]="address2.valid || address2.untouched" class="text-danger">Enter Address 2</small>
+              </div>
+              <div *ngIf="company" class="form-group col-md-4">
+                <label for="companyAddress1">Company Address 1</label>
+                <input #companyAddress1="ngModel" [(ngModel)]="user.address1" type="text" [class.is-invalid]="companyAddress1.invalid && companyAddress1.touched" class="form-control" id="companyAddress1" name="companyAddress1" required>
+                <small [class.d-none]="companyAddress1.valid || companyAddress1.untouched" class="text-danger">Enter Company Address 1</small>
+              </div>
+              <div *ngIf="company" class="form-group col-md-4">
+                <label for="companyAddress2">Company Address2</label>
+                <input #companyAddress2="ngModel" [(ngModel)]="user.address2" type="text" [class.is-invalid]="companyAddress2.invalid && companyAddress2.touched" class="form-control" id="companyAddress2" name="companyAddress2" required>
+                <small [class.d-none]="companyAddress2.valid || companyAddress2.untouched" class="text-danger">Enter Company Address 2</small>
+              </div>
+               
+            </div>
+            <div class="row">
+              <div class="form-group col-md-8">
+                <label for="interest">Insert Interest</label>
+                <input #interest="ngModel" name="interest" [(ngModel)]="interests" id="interest" class="form-control" [class.is-invalid]="interest.invalid && interest.touched" type="text">
+                <small [class.d-none]="interest.valid || interest.untouched" class="text-danger">Enter Interest</small>
+                <ul  class="list-group list-group-horizontal list-group-flush items">
+                 <small *ngFor="let items of listInterest;index as i" class="list-group-item item">{{items}} <span (click)="remove(i)"><img class="img" src="../../assets/dismiss.png" alt=""></span> </small>
+                </ul>
+              </div>
+              <div class="col-md-4 interest">
+                <button type="button" (click)="addInterest()" class="btn btn-primary">Add Interest</button>
+              </div>
+              
+            </div>
+              <div class="text-center">
+                <button [disabled]="form.invalid" class="btn btn-success" type="submit">SignUp</button>
+              </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+        </div>
+      
+      </ng-template>
+      
+    
+</div>
