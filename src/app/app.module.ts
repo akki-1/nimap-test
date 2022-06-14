@@ -13,6 +13,9 @@ import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgxUiLoaderModule, NgxUiLoaderRouterModule } from 'ngx-ui-loader';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { ClientsComponent } from './clients/clients.component';
+import { EmployerComponent } from './employer/employer.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { AboutUsComponent } from './about-us/about-us.component';
     NavbarComponent,
     ProfilePageComponent,
     AboutUsComponent,
+    ClientsComponent,
+    EmployerComponent,
+    ContactUsComponent,
   
   ],
   imports: [

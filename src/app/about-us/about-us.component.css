@@ -1,0 +1,27 @@
+.main{
+    height: 500px;
+    width: 500px;
+    font-size: large;
+    margin-top: 100px;
+    border-radius: 50%;
+    background: rgb(224,10,238);
+background: linear-gradient(3deg, rgba(224,10,238,0.7035189075630253) 20%, rgba(255,255,255,0) 42%, rgba(247,247,247,0) 84%, rgba(201,39,39,0.022846638655462215) 94%, rgba(223,209,197,1) 100%, rgba(220,143,68,1) 100%, rgba(240,240,240,0) 100%);
+    box-shadow: -2px 2px 7px rgb(238, 38, 38), -3px -2px 20px rgb(171 168 168 / 50%), 
+    inset 11px 8px 4px rgb(255 255 255 / 10%), -2px 2px 8px rgb(0 0 0 / 15%);
+   transition: all 0.3s ease;
+}
+.inside{
+    margin-top: 50px;
+    padding: 100px 50px 80px;
+}
+img{
+    width: 100%;
+}
+.image{
+    padding: 0;
+}
+/* .upper{
+    height: 92vh;
+
+    object-fit: cover;
+} */

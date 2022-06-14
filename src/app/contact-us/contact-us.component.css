@@ -1,0 +1,11 @@
+.main{
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.main img{
+   margin-top: 55px;
+    height: 100vh;
+    padding: 0;
+    object-fit: cover;
+}
