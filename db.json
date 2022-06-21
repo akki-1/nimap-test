@@ -1,0 +1,151 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "firstName": "akki",
+      "lastName": "boss",
+      "email": "hii@gmail.com",
+      "age": 12,
+      "username": "akkiboss",
+      "password": "1234",
+      "addressType": "Home",
+      "address1": "akki",
+      "address2": "home",
+      "id": 2
+    },
+    {
+      "firstName": "bruce",
+      "lastName": "banner",
+      "email": "bruce@gmail.com",
+      "age": 16,
+      "username": "hulk",
+      "password": "1234",
+      "addressType": "Home",
+      "address1": "hiii",
+      "address2": "hulk",
+      "id": 3
+    },
+    {
+      "firstName": "shivam",
+      "lastName": "wick",
+      "email": "shivam@gmail.com",
+      "age": 13,
+      "username": "akki",
+      "password": "1234",
+      "addressType": "Home",
+      "address1": "akki",
+      "address2": "home",
+      "id": 4
+    },
+    {
+      "firstName": "asdasd",
+      "lastName": "asdsad",
+      "email": "asdsad",
+      "age": 38,
+      "username": "asds",
+      "password": "ghfgh",
+      "addressType": "Home",
+      "address1": "asdsa",
+      "address2": "sdsad",
+      "id": 5
+    },
+    {
+      "firstName": "sdsad",
+      "lastName": "saddasd",
+      "email": "ssad",
+      "age": 17,
+      "username": "sadsad",
+      "password": "sadsa",
+      "addressType": "Home",
+      "address1": "asdsa",
+      "address2": "asddsa",
+      "id": 6
+    },
+    {
+      "firstName": "sdsad",
+      "lastName": "asdas",
+      "email": "asdsad",
+      "age": 4,
+      "username": "asds",
+      "password": "asdsa",
+      "addressType": "Home",
+      "address1": "asdsa",
+      "address2": "sds",
+      "id": 7
+    },
+    {
+      "firstName": "asdas",
+      "lastName": "asdsad",
+      "email": "sadsad",
+      "age": 9,
+      "username": "sadsa",
+      "password": "ssda",
+      "addressType": "Home",
+      "address1": "asdsa",
+      "address2": "sdds",
+      "id": 8
+    },
+    {
+      "firstName": "gfdfg",
+      "lastName": "jhghj",
+      "email": "sds",
+      "age": 16,
+      "username": "asdsd",
+      "password": "sdas",
+      "addressType": "Home",
+      "address1": "asdsa",
+      "address2": "sadas",
+      "id": 9
+    },
+    {
+      "firstName": "sds",
+      "lastName": "sdadd",
+      "email": "sadsa",
+      "age": 10,
+      "username": "asd",
+      "password": "sadsa",
+      "addressType": "Home",
+      "address1": "asdsd",
+      "address2": "asdd",
+      "id": 10
+    },
+    {
+      "firstName": "asdsa",
+      "lastName": "asda",
+      "email": "assd",
+      "age": 23,
+      "username": "asdsaas",
+      "password": "sadas",
+      "addressType": "Home",
+      "address1": "asdasd",
+      "address2": "asdsa",
+      "id": 11
+    },
+    {
+      "firstName": "asdas",
+      "lastName": "asda",
+      "email": "sadsa",
+      "age": 19,
+      "username": "asda",
+      "password": "assd",
+      "addressType": "Home",
+      "address1": "asd",
+      "address2": "assd",
+      "id": 12
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

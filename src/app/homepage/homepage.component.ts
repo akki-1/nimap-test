@@ -57,9 +57,10 @@ export class HomepageComponent implements OnInit {
   userObservable: Observable<any>;
 
   // Fa icons
-  faCoffee=faFreeCodeCamp
-  trophy=faAppStore
+  faCoffee = faFreeCodeCamp
+  trophy = faAppStore
 
+  response;
 
   openLg(content) {
     this.modalService.open(content, { size: 'lg' });
@@ -94,12 +95,8 @@ export class HomepageComponent implements OnInit {
     this.user.age = this.value;
     this.service.setImageUrl(this.imageURL);
     this.service.setUser(this.user);
-    console.log(this.user);
-
     this.modal.dismissAll();
     this.route.navigate(["../Profile"], { state: { user: this.user } });
-
-
   }
 
 

@@ -16,6 +16,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ClientsComponent } from './clients/clients.component';
 import { EmployerComponent } from './employer/employer.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     FormsModule,
     SweetAlert2Module,
     NgxSliderModule,
+    HttpClientModule,
     FontAwesomeModule,
     NgxUiLoaderModule,
     NgxUiLoaderRouterModule.forRoot({
